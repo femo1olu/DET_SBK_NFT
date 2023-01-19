@@ -4,7 +4,8 @@
   "description": "Off the chain is a NFT based professional profile that maintains professionals information on the blockchain.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "nodemon",
+    "serve-json": "json-serve --watch ./data/collection.json "
   },
   "author": "Femi Fawehinmi",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "express-session": "^1.17.3",
     "express-validator": "^6.14.2",
     "express.js": "^1.0.0",
+    "json-server": "^0.17.1",
     "jsonwebtoken": "^9.0.0"
   }
 }

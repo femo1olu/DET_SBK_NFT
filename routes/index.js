@@ -36,7 +36,7 @@ const data = JSON.stringify(NFT_Collection)
   router.get('/', function(req, res){
    // Landing page is served from Client index.html instead of index.ejs
    //console.log('almost there')
-   res.render('home');
+   res.render('home', {msg: " " });
   });
   
   router.post('/signup', [check('email', 'invalid email address').isEmail().normalizeEmail(),
@@ -48,7 +48,7 @@ const data = JSON.stringify(NFT_Collection)
  const errors = validationResult(req);
   console.log(errors);
   if(!errors.isEmpty()){
-    response.render('home');
+    response.render('home', {msg: 'Invalid Entry'});
     console.log('VALIDATION PRODUCED AND ERROR @ SIGNUP...Not good...')
   }else{
   
@@ -86,9 +86,8 @@ const data = JSON.stringify(NFT_Collection)
 
 
     })})
-
+    response.render('home', {msg: 'User Added!'});
  } 
- response.render('home');
 });
 
 
@@ -101,8 +100,8 @@ const data = JSON.stringify(NFT_Collection)
 const errors = validationResult(req);
  console.log(errors);
  if(!errors.isEmpty()){
-   response.render('home');
-   console.log('ValiDATION PRODUCED AND ERROR...Not good...')
+   response.render('home',{msg: 'Invalid Credentials'});
+   console.log('VALIDATION PRODUCED AND ERROR...Not good...')
  }else{
  
  console.log('This is the 1st check of the Cookie content at login: ', req.cookies.cookieToken)
@@ -152,7 +151,7 @@ const errors = validationResult(req);
                     response
                     .status(401)                          
                     //.json(null)
-                    .render('home'); 
+                    .render('home', {msg: 'Invalid Credentials'}); 
                     console.log('No access token granted')  
                     }
                 });
@@ -165,37 +164,10 @@ const errors = validationResult(req);
     //console.log('Access token sent to LogOut: ' + req.query.accessToken)
     console.log('reb body sent to LogOut: ' + req.body)
     let accessToken = null
-  
-  /*
-    User.findOne({email: req.email }) //This calls the DB model to search content of the DB
-    .then(user => {
-        if(user){ console.log('Authorized user found: ', user.firstname)
-         zeroizer(user)
-         req.session.destroy()
-  
-         res
-         .header({ 'authorization': [ `Bearer ${accessToken}` ]} )
-         .clearCookie('connect.sid')
-         .clearCookie('cookieToken')
-         .clearCookie('jwtRefresh')
-         .redirect('/')
-  
-        }else{
-          //zeroizer(user)
-          res
-          .header({ 'authorization': [ `Bearer ${accessToken}` ]} )
-          .clearCookie('connect.sid')
-          .clearCookie('cookieToken')
-          .clearCookie('jwtRefresh')
-          .status(401)
-          .render('protected_views/signin', {msg: ' '})
-        }
-      })
-*/
+
   })
   
- 
- 
+
  
  //make accessible to other files
  module.exports = router; 

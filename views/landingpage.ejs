@@ -33,13 +33,13 @@
     </nav>
     <br>
 </div>
-    <table>
-       <thead>
+    <table style = "margin-left: auto; margin-right: auto"> 	
+       <thead class = "tr">
           <tr>
-             <th>Name</th>
-             <th>Discription</th>
-             <th>ImageUrl</th>
-             <th>Attributes</th>
+             <th class = "th1">Employee Token</th>
+             <th class = "th2">Name</th>
+             <th class = "th3">Discription</th>
+             <th class = "th4">Attributes</th>
           </tr>
        </thead>
        <tbody class="data-output">
@@ -82,10 +82,10 @@ let output = "";
 
          output += `
          <tr>
-            <td> ${myObj.name}> </td>
-            <td>${myObj.description}</td>
-            <td>${myObj.image}</td>
-            <td>${myObj.attributes.trait_type}</td>
+            <td class = "td"><img src = "${myObj.image}"; class = "img"></td>
+            <td class = "td">${myObj.name}> </td>
+            <td class = "td">${myObj.description}</td>
+            <td class = "td">${myObj.attributes.trait_type}</td>
          </tr>
       `;
       }

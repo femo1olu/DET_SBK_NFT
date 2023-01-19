@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon",
-    "serve-json": "json-serve --watch ./data/collection.json "
+    "serve-json": "json-server --watch ./data/collection.json --port 8000"
   },
   "author": "Femi Fawehinmi",
   "license": "ISC",

@@ -42,13 +42,41 @@
              <th class = "th4">Attributes</th>
           </tr>
        </thead>
-       <tbody class="data-output">
+       <tbody class="data-output" id="tbody">
           <!-- Prodcuts from javascript file in here. -->
        </tbody>
     </table>
  </body>
  </html> 
- <script>
+ <script> 
+          //Create Table Data
+let tbody = document.getElementById("tbody")
+
+
+
+// fetch function
+fetch("http://localhost:8000/profiles")
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+            console.log('This is the data received ', data)
+            tbody.append(td_fun(data));
+        })
+    })
+
+// create td
+function td_fun({image, name, description, attributes}){
+    let td = document.createElement('tr');
+    td.innerHTML = `
+    <td class = "td"><img src = "${image}"; class = "img"></td>
+            <td class = "td">${name}> </td>
+            <td class = "td">${description}</td>
+            <td class = "td">${attributes}</td>
+    `;
+    return td;
+}
+
+/*
 let rawData = '<%- data %>'
 console.log('The NFT Collection received ', rawData)
 //sessionStorage.setItem('NFTCollection', JSON.stringify(rawData))
@@ -91,4 +119,5 @@ let output = "";
       }
 
       document.querySelector(".data-output").innerHTML = output;
+*/
  </script>

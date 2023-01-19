@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>OffDChain</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<script   src="https://code.jquery.com/jquery-1.12.4.js"   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="   crossorigin="anonymous"></script>
+
+<script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+<div class="jumbotron jumbotron-main"> <!--was jumbotron-sub -->
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+
+          </div>
+        </div>
+    </nav>
+    <br>
+</div>
+    <table>
+       <thead>
+          <tr>
+             <th>Name</th>
+             <th>Discription</th>
+             <th>ImageUrl</th>
+             <th>Attributes</th>
+          </tr>
+       </thead>
+       <tbody class="data-output">
+          <!-- Prodcuts from javascript file in here. -->
+       </tbody>
+    </table>
+ </body>
+ </html> 
+ <script>
+let rawData = '<%- data %>'
+console.log('The NFT Collection received ', rawData)
+//sessionStorage.setItem('NFTCollection', JSON.stringify(rawData))
+//let eachEntry = sessionStorage.getItem('NFTCollection').split(/]},/) //REGEX to locate every point with "]},"
+
+let eachEntry = rawData.split(/]},/) //REGEX to locate every point with "]},"
+
+let myObj 
+let output = "";
+      for(let i=0; i<=19; i++){
+       // let eachEntry = sessionStorage.getItem(NFTCollection[i])
+        console.log(`Type of Entry ${i} from rawData `, typeof(eachEntry[i]))
+        console.log(`Entry ${i} from rawData `, eachEntry[i])
+        if(i==0){
+        eachEntry[i] = eachEntry[i].replace('[',"") + ']}'   //Remove first character "[" 
+        //eachEntry[i] = eachEntry[i] + ']}]'
+        }
+        else if(i == 19) { 
+           // eachEntry[i] = '[' + eachEntry[i]
+           eachEntry[i] = eachEntry[i].slice(0,-1) //Remove last character "]"
+        }
+        else{
+            eachEntry[i] = eachEntry[i] + ']}'
+        }
+        console.log(`Type of Entry ${i} from rawData 2 `, typeof(eachEntry[i]))
+        console.log(`Entry ${i} from rawData 2 `, eachEntry[i])
+
+        myObj = JSON.parse(eachEntry[i])
+        console.log(`Type of  myObj `, typeof(myObj))
+        console.log(`Entry ${i} in myObj `, myObj.name)
+
+         output += `
+         <tr>
+            <td> ${myObj.name}> </td>
+            <td>${myObj.description}</td>
+            <td>${myObj.image}</td>
+            <td>${myObj.attributes.trait_type}</td>
+         </tr>
+      `;
+      }
+
+      document.querySelector(".data-output").innerHTML = output;
+ </script>

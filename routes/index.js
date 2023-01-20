@@ -26,10 +26,14 @@ const {
 
 const jwt = require('jsonwebtoken')
 
-const NFT_Collection = require('../data/collection.json')
-console.log('This is the content of the collection ', JSON.stringify(NFT_Collection))
-const data = JSON.stringify(NFT_Collection)
 
+const fetch = (...args) =>
+	import('node-fetch').then(({default: fetch}) => fetch(...args)); // The work around to import node-fetch package for server-side public fetches
+
+const NFT_Collection = require('../data/collection.json')
+//console.log('This is the content of the collection ', JSON.stringify(NFT_Collection))
+const data = JSON.stringify(NFT_Collection)
+const url = 'http://localhost:8000/profiles'
 
   //Input to Directory route chosen to specific file mapping
   //Add route -- This is route for home/index page
@@ -143,9 +147,9 @@ const errors = validationResult(req);
  
                     .cookie('cookieToken', accessToken, { httpOnly: true, sameSite: 'None', secure: true, max_Age: 500} )
 
-                    .render('landingpage', {data: data}); 
+                    .render('landingpage', {data: url}); 
 
-                    console.log('This is the access token granted by handleLogin: ' + accessToken)
+                    console.log('This is the access token granted at login: ' + accessToken)
                 } 
                 else{
                     response
@@ -158,15 +162,62 @@ const errors = validationResult(req);
 }
 })
   
- router.get('/logout', verifySessionId, (req, res) => { // Delete Refresh token from DB. Once logout is hit compare current refresh token to the very first one issued
-   // refreshTokens = refreshTokens.filter(token => token !== req.body.token)
-    //res.sendStatus(204) // Say No Content
-    //console.log('Access token sent to LogOut: ' + req.query.accessToken)
-    console.log('reb body sent to LogOut: ' + req.body)
-    let accessToken = null
+router.post('/search', verifySessionId,
+function(req, response){
+    let searchValue = req.body.searchValue;
+    console.log('This is the search value received ', searchValue)
+    if((searchValue == "ALL")||(searchValue == "all")||(searchValue == null)){
+        //let data = getAllProfiles()
+        const url = 'http://localhost:8000/profiles'
+        console.log('URL to call ', url)
+        //response.render('landingpage', {data: data});
+        response.render('landingpage', {data: url});
+    }
+    else{
+        //let data = getSpecificProfiles(searchValue)
+        const url = 'http://localhost:8000/profiles'+'?q='+searchValue
+        console.log('URL to call ', url)
+        //response.render('landingpage', {data: data});
+        response.render('landingpage', {data: url});
+    }
+})
 
+ router.get('/logout', verifySessionId, (req, res) => { // Delete Refresh token from DB. Once logout is hit compare current refresh token to the very first one issued
+    let accessToken = null
+    res.render('home')
   })
   
+async function getAllProfiles(){
+    const url = 'http://localhost:8000/profiles'
+
+    console.log('URL to call ', url)
+
+    fetch(url)
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+            console.log('This is the data received ', data)
+            return data 
+        })
+    })
+}
+
+async function getSpecificProfiles(searchValue){
+
+    const url = 'http://localhost:8000/profiles'+'?q='+searchValue
+
+    console.log('URL to call ', url)
+
+    fetch(url)
+    .then(res => res.json())
+    .then(json => {
+        json.map(data => {
+            console.log('This is the data received ', data)
+            return data
+        })
+    })
+
+}
 
  
  //make accessible to other files

@@ -35,19 +35,19 @@
         "attributes": [
             {
                 "trait_type": "Languages",
-                "value": ""
+                "value": "C#"
             },
             {
                 "trait_type": "Technologies",
-                "value": ""
+                "value": "Docker"
             },
             {
                 "trait_type": "Degree",
-                "value": ""
+                "value": "Masters"
             },
             {
                 "trait_type": "Location",
-                "value": ""
+                "value": "India"
             },
             {
                 "trait_type": "Certifications",
@@ -62,19 +62,19 @@
         "attributes": [
             {
                 "trait_type": "Languages",
-                "value": ""
+                "value": "C++"
             },
             {
                 "trait_type": "Technologies",
-                "value": ""
+                "value": "JFrog"
             },
             {
                 "trait_type": "Degree",
-                "value": ""
+                "value": "PhD"
             },
             {
                 "trait_type": "Location",
-                "value": ""
+                "value": "Nigeria"
             },
             {
                 "trait_type": "Certifications",
@@ -413,7 +413,7 @@
         "attributes": [
             {
                 "trait_type": "Languages",
-                "value": ""
+                "value": "Java"
             },
             {
                 "trait_type": "Technologies",

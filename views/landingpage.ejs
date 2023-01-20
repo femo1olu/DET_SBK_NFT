@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>OffDChain</title>
+	<title>DET SBK NFT</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -33,6 +33,15 @@
     </nav>
     <br>
 </div>
+<div>
+
+   <form class = "col-sm-2 mb-3  form form-check" method = "POST" action = "/search">
+      <label class="form-label">Fulltext Search of Employee Profile</label>
+      <input  type="text" class="form-control"  name ="searchValue" required>
+      <br>
+      <button type="submit" class="btn btn-primary"><strong>Search</strong></button>
+  </form>
+</div>
     <table style = "margin-left: auto; margin-right: auto"> 	
        <thead class = "tr">
           <tr>
@@ -51,11 +60,12 @@
  <script> 
           //Create Table Data
 let tbody = document.getElementById("tbody")
+let url = '<%- data %>'
+console.log('Fetch data from this API ', url)
 
+// fetch ALL function 
 
-
-// fetch function
-fetch("http://localhost:8000/profiles")
+fetch(url)
     .then(res => res.json())
     .then(json => {
         json.map(data => {
@@ -63,6 +73,7 @@ fetch("http://localhost:8000/profiles")
             tbody.append(td_fun(data));
         })
     })
+    .catch(err => console.error('The API Fetch produced an error:' + err));
 
 // create td
 function td_fun({image, name, description, attributes}){

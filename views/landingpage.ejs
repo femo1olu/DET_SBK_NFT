@@ -60,6 +60,7 @@
  <script> 
           //Create Table Data
 let tbody = document.getElementById("tbody")
+let myObj = []
 let url = '<%- data %>'
 console.log('Fetch data from this API ', url)
 
@@ -69,20 +70,57 @@ fetch(url)
     .then(res => res.json())
     .then(json => {
         json.map(data => {
-            console.log('This is the data received ', data)
-            tbody.append(td_fun(data));
+            console.log('This is the data received ', data)   
+
+            let rawAttributes = JSON.stringify(data.attributes)
+            let rawAttributes2 = rawAttributes.replace('[',"")    //Remove first character "["
+            let rawAttributes3 = rawAttributes2.slice(0,-1) //Remove last character "]"
+            let eachEntry = rawAttributes3.split(/},{/) //REGEX to locate every point with "},{"
+            //console.log('Content of Atttributes ', eachEntry)  
+            
+        for(let i=0; i<=7; i++){
+            //let myObj = JSON.parse(eachEntry)
+            //console.log('Content of Atttributes in myObj ', myObj)  
+        if(i == 0){
+            eachEntry[i] = eachEntry[i] + '}'   //Remove first character "[" eachEntry[i] = eachEntry[i].replace('[',"") + ']}'   //Remove first character "[" 
+        }
+        else if( i == 7){
+            eachEntry[i] = '{' + eachEntry[i] 
+        }
+        else{
+            eachEntry[i] = '{' + eachEntry[i] + '}'  
+        }
+    console.log(`Type of Entry ${i} from eachEntry `, typeof(eachEntry[i]))
+    console.log(`Entry ${i} from eachEntry `, eachEntry[i])
+    
+    myObj[i] = JSON.parse(eachEntry[i])
+    console.log(`Type of  myObj `, typeof(myObj))
+    console.log(`Entry ${i} in myObj trait_type`, myObj[i].trait_type)
+    console.log(`Entry ${i} in myObj trait_value`, myObj[i].value)
+
+    }
+    console.log('Content of Atttributes ', eachEntry) 
+            tbody.append(td_fun(data, myObj));
         })
     })
     .catch(err => console.error('The API Fetch produced an error:' + err));
 
 // create td
-function td_fun({image, name, description, attributes}){
+function td_fun({image, name, description, attributes}, myObj){
     let td = document.createElement('tr');
     td.innerHTML = `
     <td class = "td"><img src = "${image}"; class = "img"></td>
-            <td class = "td">${name}> </td>
+            <td class = "td">${name} </td>
             <td class = "td">${description}</td>
-            <td class = "td">${attributes}</td>
+            <!-- <td class = "td">${attributes}</td> -->
+            <td class = "td">${myObj[0].trait_type} , ${myObj[0].value}; 
+                ${myObj[1].trait_type} , ${myObj[1].value}; 
+                ${myObj[2].trait_type} , ${myObj[2].value}; 
+                ${myObj[3].trait_type} , ${myObj[3].value}; 
+                ${myObj[4].trait_type} , ${myObj[4].value}; 
+                ${myObj[5].trait_type} , ${myObj[5].value}; 
+                ${myObj[6].trait_type} , ${myObj[6].value}; 
+                ${myObj[7].trait_type} , ${myObj[7].value}; </td>
     `;
     return td;
 }

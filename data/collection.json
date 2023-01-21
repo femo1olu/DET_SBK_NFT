@@ -1,545 +1,605 @@
 {
     "profiles": 
     [
-    {
-        "name": "DET Dev #1",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "https://www.istockphoto.com/resources/images/PhotoFTLP/P4-JAN-iStock-1432854572.jpg",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": "Java"
-            },
-            {
-                "trait_type": "Technologies",
-                "value": "Kubernetes"
-            },
-            {
-                "trait_type": "Degree",
-                "value": "Bachelors"
-            },
-            {
-                "trait_type": "Location",
-                "value": "US"
-            },
-            {
-                "trait_type": "Certifications",
-                "value": "Azure"
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #2",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "https://www.istockphoto.com/resources/images/PhotoFTLP/P4-JAN-iStock-1432854572.jpg",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": "C#"
-            },
-            {
-                "trait_type": "Technologies",
-                "value": "Docker"
-            },
-            {
-                "trait_type": "Degree",
-                "value": "Masters"
-            },
-            {
-                "trait_type": "Location",
-                "value": "India"
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #3",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "https://www.istockphoto.com/resources/images/PhotoFTLP/P4-JAN-iStock-1432854572.jpg",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": "C++"
-            },
-            {
-                "trait_type": "Technologies",
-                "value": "JFrog"
-            },
-            {
-                "trait_type": "Degree",
-                "value": "PhD"
-            },
-            {
-                "trait_type": "Location",
-                "value": "Nigeria"
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #4",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #5",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #6",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #7",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #8",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #9",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #10",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #11",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #12",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #13",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #14",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #15",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #16",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": "Java"
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #17",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #18",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #19",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": "Python"
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    },
-    {
-        "name": "DET Dev #20",
-        "description": "DET Dev is a collection of developers in crypto",
-        "image": "image_url",
-        "attributes": [
-            {
-                "trait_type": "Languages",
-                "value": ""
-            },
-            {
-                "trait_type": "Technologies",
-                "value": ""
-            },
-            {
-                "trait_type": "Degree",
-                "value": ""
-            },
-            {
-                "trait_type": "Location",
-                "value": ""
-            },
-            {
-                "trait_type": "Certifications",
-                "value": ""
-            } 
-        ]
-    }
+        {
+            "id": 1,
+            "name": "DET SBK #1",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/1.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "macOS"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Brackets"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Doctorate"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Scala"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Government"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Kisumu"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Certified information security manager"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Flutter"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "DET SBK #2",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/2.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Windows 95"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Emacs"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Ph.d"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "C"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Traveling Consultant"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "London"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Cisco certified network professional"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "NPM"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "DET SBK #3",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/3.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Slackware Linux"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Sublime Text"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Doctorate"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Legit"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "VR"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Buenos Aires"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Certified information systems security professional"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Three JS"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "DET SBK #4",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/1.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "FreeBSD"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "VIM"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Master of Science"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Swift"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Influencer"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Bucharest"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Information technology infrastructure library"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "React native"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "DET SBK #5",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/2.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Linux Mint"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Pen and Paper"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Doctorate"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Kotlin"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Government"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "London"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Certified cloud security professional"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Next JS"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "DET SBK #6",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/6.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Slackware Linux"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Dreamweaver"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Bachelors of Science"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Brainfuck"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "VR"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Goa"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "AWS certified cloud practitioner"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Remix"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "DET SBK #7",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/7.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "macOS"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Sublime Text"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Bachelors of Arts"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Shakespeare"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Farming"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Jackson"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Microsoft Certified Azure Solutions Architect"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Design systems"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "DET SBK #8",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/8.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Google Chrome OS"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "VIM"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Master of Arts"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Scala"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Environmental"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Paris"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Microsoft certified solutions associate/expert"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Micro frontends"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "DET SBK #9",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/9.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Slackware Linux"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Brackets"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Master of Arts"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Go"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Undercover"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Kisumu"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "AWS Solutions Architect"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Next JS"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "DET SBK #10",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/10.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Kali Linux"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Bluefish"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Bachelors of Science"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Piet"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Money Laundering"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Sao Paulo"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Certified information security manager"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Vue JS"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "DET SBK #11",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/1.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Windows 95"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Dreamweaver"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Associates"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "ArnoldC"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Hollywood"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Ramallah"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Cisco certified network professional"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Gatsby JS"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "DET SBK #12",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/2.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Chromium OS"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Brackets"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Bachelors of Arts"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Kotlin"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Crypto"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Saint Petersburg"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Cisco certified internetwork expert"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "React native"
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "name": "DET SBK #13",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/3.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Windows Vista"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Mental Telepathy"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Associates"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Legit"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Nonprofit"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Shenzhen"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "IBM Certified Technical Advocate - Cloud v3 "
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Monorepo"
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "name": "DET SBK #14",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/1.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Linux Mint"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Dreamweaver"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Master of Science"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "Go"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Farming"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Goa"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "Certified information security manager"
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "Flutter"
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "name": "DET SBK #15",
+            "description": "DET SBK is a collection of NFTs based on skills, background and knowledge gained.",
+            "image": "https://ipfs.filebase.io/ipfs/QmcfsZCGdcXyHJP8MupMQwYuSET8TFJCHUhAaoJwe4EJuP/2.svg",
+            "attributes": [
+                {
+                    "trait_type": "OS Skills",
+                    "value": "Windows 95"
+                },
+                {
+                    "trait_type": "Text Editor",
+                    "value": "Pen and Paper"
+                },
+                {
+                    "trait_type": "Degree",
+                    "value": "Bachelors of Science"
+                },
+                {
+                    "trait_type": "Language",
+                    "value": "ArnoldC"
+                },
+                {
+                    "trait_type": "Industry",
+                    "value": "Government"
+                },
+                {
+                    "trait_type": "Location",
+                    "value": "Jackson"
+                },
+                {
+                    "trait_type": "Certifications",
+                    "value": "CompTIA "
+                },
+                {
+                    "trait_type": "Front-End",
+                    "value": "HTML5 Boilerplate"
+                }
+            ]
+        }
     ]
 }

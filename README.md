@@ -13,7 +13,8 @@ REFRESH_TOKEN_SECRET = See number 4
   a. At any prompt where node is available type node and hit enter.
   b. Use this command to generate required random number - "require('crypto').randomBytes(64).toString('hex')"
 5. Open the packge.json file to see the configuration and to know what dependencies to install usin -> npm install "name of package" ...at the prompt for the root directory of the project. (i.e. DET_SBK_NFT)
-6. In index.js routes folder, point/pass the location of the user.json file into fs.writeFile function on line 83.
+6. a. In index.js routes folder, point/pass the location of the user.json file into fs.writeFile function on line 83.
+   b. Ensure user.json in the data folder is not empty, at the very least it must contain [ ] 
 In this form - C:/Users/XXXX/NFT_Challenge/DET_SBK_NFT/data/users.json
 7. At a termimal prompt set at the root directory run . -> npm run serve-json
 8. At another termimal prompt set at the root directory run . -> npm run start
